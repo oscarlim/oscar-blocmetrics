@@ -1,4 +1,32 @@
 Blocmetrics::Application.routes.draw do
+  devise_for :lists
+
+  devise_for :items
+
+  get "users_controller/index"
+
+  get "users_controller/show"
+
+  get "users_controller/new"
+
+  get "users_controller/edit"
+
+  get "lists_controller/index"
+
+  get "lists_controller/show"
+
+  get "lists_controller/new"
+
+  get "lists_controller/edit"
+
+  get "items_controller/index"
+
+  get "items_controller/show"
+
+  get "items_controller/new"
+
+  get "items_controller/edit"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
